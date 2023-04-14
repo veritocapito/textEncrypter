@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+nav{
+    background-color: #ffff;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1 {
+    display: inline-flex;
+    color: #4DB6D2;
+
+}
+
+nav img{
+    height: 15vh;
+}
+
+main{
+    background-color: rgb(187, 170, 230);
+}
+
+section{
+    background-color: rgb(122, 231, 231);
+}
+
+footer{
+    position: fixed;
+    background-color: #4DB6D2;
+    text-align: center;
+    color: #ffff;
+}
