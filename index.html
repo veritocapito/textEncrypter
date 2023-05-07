@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles.css">
     <title>Text Encrypter</title>
 </head>
@@ -15,24 +16,29 @@
             </nav>
         </header>
         <main>
-            <form action="#">
+            <section>
                 <!-- Campo para el texto que va a ser encriptado/desencriptado-->
-                <input name="text" id="text" placeholder="Ingrese el texto aqui"></input>
+                <textarea cols="20" rows="12" id="text" placeholder="Ingrese el texto aqui..."></textarea>
+                <p class="muted">Solo letras minúsculas y sin acentos</p>
                 <div class="buttons">
-                    <p class="muted">Solo letras minúsculas y sin acentos</p>
                     <!-- Un botón para encriptar -->
                     <button id="button1">Encriptar</button>
                     <!-- Un botón para desencriptar -->
                     <button id="button2">Desencriptar</button>
                 </div>
-            </form>
+            </section>
+            <section>
+                <!-- Área para mostrar el texto encriptado/desencriptado -->
+                <div class="message">
+                    <textarea cols="20" rows="4" id="message" placeholder="Ningún mensaje fue encontrado."></textarea>
+                    <button class="copy">Copiar</button>
+
+                </div>
+            </section>
+
+
         </main>
-        <section>
-            <!-- Área para mostrar el texto encriptado/desencriptado -->
-            <div>
-                <textarea name="" id="" cols="25" rows="8" placeholder="Ingresa el texto que desees encriptar o desencriptar.">Ningún mensaje fue encontrado</textarea>
-            </div>
-        </section>
+
         <footer class="">
             <p>design by @veritocapito</p>
         </footer>

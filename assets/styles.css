@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +9,11 @@
 
 body{
     background-color: rgb(233, 248, 250);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 150%;
 }
 
 nav{
@@ -29,11 +37,11 @@ nav img{
 main{
     padding: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 50vh;
 }
 
-form{
-    min-height: 40vh;
-    margin: 1rem;
+section{
+    margin: 0.5rem 1rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -41,17 +49,22 @@ form{
     gap: 1rem;
 }
 
-input{
+#text{
+    resize: none;
     border-style: none;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 10px;
-    margin: 1rem;
+    background-color: transparent;
 }
 
-::placeholder {
+#text::placeholder {
     color: rgb(10, 56, 113);
-    font-size: 1.5em;
+    font-size: 1rem;
     font-weight: bold;
+}
+
+textarea:focus{
+    outline: none;
 }
 
 .muted{
@@ -64,7 +77,7 @@ input{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 #button1{
@@ -85,13 +98,28 @@ input{
     background-color: transparent;
 }
 
-section{
-    min-height: 30vh;
-    display: flex;
-    justify-content: center;
+.copy{
+    position: absolute;
+    right: 60px;
+    height: 40px;
+    width: 60px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(10, 56, 113);
 }
 
-textarea{
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+#message{
+    background-color: white;
     border-radius: 10px;
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -100,12 +128,16 @@ textarea{
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
+#message::placeholder {
+    color: rgb(10, 56, 113);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 footer{
-    position: fixed;
-    bottom:0;
     width: 100vw;
     height: 10vh;
-    clear:both;
     background-color: #4DB6D2;
     justify-content: center;
     align-items: flex-end;
@@ -116,3 +148,44 @@ footer{
     font-size: small;
 }
 
+@media only screen and (min-device-width: 1200px) {
+    
+    main{
+        display: flex;
+    }
+    
+    section{
+        max-width: 80%;
+
+        align-items: center;
+    }
+
+    #message{
+        background-image: url("./munieco.png");
+        background-repeat: no-repeat;
+    }
+}
+
+
+@media only screen and (min-device-width: 567px) and (max-device-width: 1199px){
+
+    #text{
+        min-height: 50vh;
+    }
+
+    .muted{
+        padding-left: 1rem;
+    }
+    .buttons{
+        flex-direction: row;
+    }
+    
+    button{
+        width: 50%;
+    }
+    
+    .copy{
+        margin-right: 5px;
+        margin-left: 70%;
+    }
+}
