@@ -25,6 +25,7 @@ function btnDecrypter() {
     const decryptedText = decrypt(text.value);
     message.value = decryptedText;
     text.value = "";
+    message.style.backgroundImage = "none";
 }
 
 function decrypt(stringDecrypted) {
@@ -39,10 +40,9 @@ function decrypt(stringDecrypted) {
     return stringDecrypted;
 }
 
-const source = document.getElementsByClassName(".copy");
+function copyText(){
+    let button = document.getElementsByClassName(".copy");
+    navigator.clipboard.writeText(message.value);
+}
 
-source.addEventListener("copy", (event) => {
-    const selection = document.getSelection();
-    event.clipboardData.setData("text/plain", selection.toString());
-    event.preventDefault();
-});
+

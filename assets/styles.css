@@ -103,19 +103,20 @@ textarea:focus{
     right: 60px;
     height: 40px;
     width: 60px;
-    margin-top: 5%;
-    margin-bottom: 1%;
+    margin-left: 0%;
+    margin-top: 10%; 
     border: none;
     cursor: pointer;
     background-color: transparent;
     color: rgb(10, 56, 113);
+    align-self: flex-start;
 }
 
 .message{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0.5rem 0;
+    margin-bottom: 2rem;
 }
 
 #message{
@@ -146,6 +147,8 @@ footer{
     padding: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: small;
+    position: fixed;
+    bottom: 0;
 }
 
 @media only screen and (min-device-width: 1200px) {
@@ -184,8 +187,8 @@ footer{
     }
 
     .message{
-        min-height: 98%;
-        margin: -0.5% 0;
+        min-height: 95%;
+        justify-content: flex-start;
     }
 
     #message{
@@ -197,7 +200,7 @@ footer{
 
     .copy{
         right: 250px;
-        margin-bottom: -15%;
+        bottom: 100px;
     }
 
     footer{
@@ -225,6 +228,6 @@ footer{
     }
     
     .copy{
-        margin-bottom: 2%;
+        margin-bottom: 8%;
     }
 }
