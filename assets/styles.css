@@ -152,17 +152,57 @@ footer{
     
     main{
         display: flex;
+        justify-content: center;
+        margin-top: 2rem;
     }
     
-    section{
-        max-width: 80%;
-
+    .text-section{
+        min-width: 45%;
         align-items: center;
+    }
+
+    #text{
+        min-height: 40vh;
+        min-width: 100%;
+    }
+
+    .buttons{
+        flex-direction: row;
+        min-width: 100%;
+    }
+
+    .muted{
+        align-self: flex-start;
+    }
+
+    button{
+        width: 50%;
+    }
+
+    .message-section{
+        min-width: 25%;
+    }
+
+    .message{
+        min-height: 98%;
+        margin: -0.5% 0;
     }
 
     #message{
         background-image: url("./munieco.png");
         background-repeat: no-repeat;
+        background-position: center;
+        min-height: 100%;
+    }
+
+    .copy{
+        right: 250px;
+        margin-bottom: -15%;
+    }
+
+    footer{
+        position: fixed;
+        bottom: 0;
     }
 }
 
@@ -170,7 +210,7 @@ footer{
 @media only screen and (min-device-width: 567px) and (max-device-width: 1199px){
 
     #text{
-        min-height: 50vh;
+        min-height: 40vh;
     }
 
     .muted{
