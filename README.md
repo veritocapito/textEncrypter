@@ -7,7 +7,7 @@ This project was developed during April 2023 - May 2023, as a result of Alura's 
 
 ## Technologies: :eight_pointed_black_star:
 
-HTML - CSS - Boostrap - Javascript
+HTML - CSS - Javascript
 
 
 ## Aditional Information  :white_check_mark:
