@@ -186,7 +186,7 @@ footer{
     }
 
     .message{
-        min-height: 95%;
+        min-height: 100%;
         justify-content: flex-start;
     }
 
@@ -199,7 +199,7 @@ footer{
 
     .copy{
         right: 17vw;
-        bottom: 18vh;
+        bottom: 22vh;
     }
 
     footer{
